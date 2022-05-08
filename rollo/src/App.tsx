@@ -1,13 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ResetCSS } from "./CSS";
+import Global from "./contexts/Global";
+import Menu from "./components/header";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      Test
-    </div>
+    <>
+      {/* <ResetCSS /> */}
+      {/* <Global /> */}
+      <Menu />
+    </>
   );
-}
+};
 
 export default App;
