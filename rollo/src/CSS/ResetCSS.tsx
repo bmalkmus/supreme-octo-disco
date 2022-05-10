@@ -73,13 +73,13 @@ const ResetCSS = createGlobalStyle`
     width: 8px;
   }
   ::-webkit-scrollbar-thumb {
-    background: pink; 
+    background: ${({ theme }) => theme.colors.background}; 
     border-radius: 8px;
     border: 2px solid transparent;
     background-clip: content-box;
   }
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px green; 
+    box-shadow: inset 0 0 5px ${({ theme }) => theme.colors.background}; 
     border-radius: 10px;
   }
 
